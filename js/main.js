@@ -18,6 +18,10 @@ $("#nav-beneficiaries").click(()=> {
     $(".beneficiaries-section").animate({top: '0'}, 1000);
 });
 
+$("#nav-contact").click(()=> {
+    $(".contact-section").animate({top: '0'}, 1000);
+});
+
 
 $(".top-section-close").click(()=>{
     $(".top-section").animate({top: '-100%'}, 1000);

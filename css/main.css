@@ -81,7 +81,7 @@ html {
 
 .main-section div img {
     width: 35%;
-    padding-top: 5%;
+    padding-top: 0%;
 }
 
 .main-section>div {
@@ -145,6 +145,10 @@ html {
 .right-section {
     grid-template-columns: 75% 25%;
     text-align: right;
+}
+
+.contact-section .left-section {
+    grid-template-columns: 40% 60%;
 }
 
 .top-section-close {
@@ -257,4 +261,8 @@ html {
 
 .right-section .grid-text>div {
     margin-left: auto;
+}
+
+.contact-section {
+
 }
