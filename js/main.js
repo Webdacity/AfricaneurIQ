@@ -30,3 +30,11 @@ $(".top-section-close").click(()=>{
 $(".bottom-section-close").click(()=>{
     $(".bottom-section").animate({top: '100%'}, 1000);
 });
+
+
+
+// HTTP Referrer 
+
+if (ref.match(/^https?:\/\/([^\/]+\.)?webdacity\..co.za(\/|$)/i)) {
+    alert("Came from Webdacity");
+  }
