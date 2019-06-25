@@ -221,26 +221,45 @@
 
     <!-- Contact Section -->
     <section class="bottom-section contact-section section">
-        <i class="fal fa-times bottom-section-close"></i>
         <div class="section-grid right-section">
             <div class="contact-grid">
-                <div>
-                    <h1>Get in Touch</h1>
-                    <form method="post" name="myemailform" action="./mail/form-to-email.php">
-                            <p>
-                                <label for='name'>Enter Name: </label><br>
-                                <input type="text" name="name">
-                            </p>
-                            <p>
-                                <label for='email'>Enter Email Address:</label><br>
-                                <input type="text" name="email">
-                            </p>
-                            <p>
-                                <label for='message'>Enter Message:</label> <br>
-                                <textarea name="message"></textarea>
-                            </p>
-                            <input type="submit" name='submit' value="submit">
-                        </form>
+                    <i class="fal fa-times bottom-section-close"></i>
+                <h1>Want to <span>Talk?</span></h1>
+                <form method="post" name="myemailform" action="./mail/form-to-email.php" class="contact-form">
+                    <div>
+                        <label for='name'>Name: </label><br>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div>
+                        <label for='email'>Email:</label><br>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for='message'>Message:</label> <br>
+                        <textarea name="message" rows="2" required></textarea>
+                    </div>
+                    <input type="submit" name='submit' value="Submit" class="submit-button">
+                </form>
+                <div class="contact-info">
+                    <a href="tel:+27 (0) 10 822 6530"><i class="fal fa-phone"></i>+27 (0) 10 822 6530</a>
+                    <a href="mailto:info@africaneur.co.za"><i class="fal fa-envelope"></i>info@africaneur.co.za</a>
+                    <div>
+                        <i class="fal fa-map-marker-alt"></i>
+                        <p>
+                            Johannesburg: <br>
+                            <a href="https://goo.gl/maps/14uUAY1uwrQwSpxG6" target="blank">
+                            2nd Floor <br> Block E <br> 34 Whiteley Road <br>Melrose Arch <br>Johannesburg</a>
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fal fa-map-marker-alt"></i>
+                        <p> Cape Town: <br>
+                        <a href="https://goo.gl/maps/9QY7Nmi6K3ZQneRC7" target="blank">
+                            Ground Floor <br> Block B <br> Octo Place | Electron Road <br>Techno Park <br> Stellenbosch
+                            </a>
+                        </p>
+                    </div>
+
                 </div>
             </div>
             <div class="contact-map">
