@@ -26,7 +26,7 @@ html {
 .navbar {
     position: absolute;
     left: 0;
-    padding: 20px 5%;
+    padding: 25px 5%;
     z-index: 10;
     width: 90%;
     display: flex;
@@ -42,7 +42,7 @@ html {
     color: white;
     margin: 0;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 21px;
     border-bottom: 1px solid var(--orange);
     cursor: pointer;
     padding-bottom: 0;
@@ -415,4 +415,38 @@ html {
 .contact-info>div p {
     font-weight: 600;
     color: var(--orange);
+}
+
+
+/* Beneficiary Section */
+
+.beneficiaries-section .grid-text h5 {
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.beneficiaries-section .grid-text ul {
+    list-style: none;
+}
+
+.beneficiaries-section .grid-text ul li {
+    padding: 5px 0;
+    /* font-size: 20px; */
+    font-weight: 400;
+}
+
+.beneficiaries-section .grid-text ul li span{
+    color: var(--orange);
+    font-weight: 600;
+}
+
+.who-section .top-section-close, .beneficiaries-section .bottom-section-close, .what-section .top-section-close{
+    color: black !important;
+}
+
+.who-section .top-section-close:hover, .beneficiaries-section .bottom-section-close:hover, .what-section .top-section-close:hover{
+    color: white !important;
 }
