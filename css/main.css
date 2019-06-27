@@ -6,7 +6,6 @@
 /* Variables */
 :root {
     --orange: #E75425;
-    /* --orange: rgb(247, 150, 70); */
 }
 
 
@@ -18,6 +17,27 @@ html {
     padding: 0;
     font-family: "Source Sans Pro";
     overflow-y: hidden;
+}
+
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--orange); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
 }
 
 
@@ -81,31 +101,13 @@ html {
 }
 
 .main-section div img {
-    width: 35%;
+    width: 45%;
     padding-top: 0%;
 }
 
 .main-section>div {
     text-align: center
 }
-
-.main-section>div p {
-    color: #E75425;
-    font-size: 0.8vw;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main-section>div p span {
-    color: #E75425;
-    font-size: 1.75vw;
-    font-weight: 300;
-    padding: 0 10px;
-    text-transform: uppercase;
-}
-
 
 
 
@@ -120,6 +122,9 @@ html {
     z-index: 15;
     transition: 0.6;
     overflow: hidden;
+    background-image: url("../assets/images/sections/section-background.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .bottom-section {
@@ -218,7 +223,7 @@ html {
 
 .grid-heading {
     background-size: auto 100%;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -240,9 +245,6 @@ html {
     letter-spacing: 0.2px;
     line-height: 1.5;
     /* background-color: #181818; */
-    background-image: url("../assets/images/sections/section-background.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .middle-section .grid-text {
@@ -280,8 +282,14 @@ html {
     grid-template-columns: 70% 30%;
 }
 
+.contact-section .section-grid .grid-heading{
+    display: none
+}
+
+
+
 .contact-grid {
-    padding: 3% 5%;
+    padding: 1% 5%;
     color: white;
     font-weight: 300;
     font-size: 18px;
@@ -324,7 +332,7 @@ html {
 .contact-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
     grid-column-gap: 10%;
 }
 
@@ -383,7 +391,7 @@ html {
 .contact-info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .contact-info a {
@@ -391,6 +399,13 @@ html {
     text-decoration: none;
     font-weight: 400;
     transition: 0.5s;
+    font-size: 17px;
+}
+
+.contact-info h2 {
+    font-weight: 600;
+    color: var(--orange);
+    margin: 0;
 }
 
 .contact-info a:hover {
@@ -402,14 +417,15 @@ html {
     margin-right: 15px;
 }
 
-.contact-info>div {
+.contact-info>div>div{
     display: flex;
     align-items: center;
 }
 
 .contact-info>div a {
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 300;
+    display: block;
 }
 
 .contact-info>div p {
@@ -430,12 +446,17 @@ html {
 
 .beneficiaries-section .grid-text ul {
     list-style: none;
+    padding: 0;
 }
 
 .beneficiaries-section .grid-text ul li {
     padding: 5px 0;
     /* font-size: 20px; */
     font-weight: 400;
+}
+
+.beneficiaries-section .grid-text ul li img {
+    height: 24px;
 }
 
 .beneficiaries-section .grid-text ul li span{
