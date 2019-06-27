@@ -52,7 +52,7 @@
         text-align: center;
     }
 
-    .grid-text > div {
+    .grid-text>div {
         margin: 0 auto !important;
     }
 
@@ -60,15 +60,35 @@
         grid-template: 150px 5fr 3fr / 1fr;
     }
 
-    .contact-section .section-grid .grid-heading{
+    .contact-grid {
+        padding: 5% 5% 10% 5%;
+    }
+
+    .main-section div img {
+        width: 55%;
+    }
+
+    .about-section .grid-heading {
+        background-image: url("../assets/images/sections/about-section-horizontal.jpg");
+    
+    }
+
+    
+    .what-section .grid-heading {
+        background-image: url("../assets/images/sections/what-section-horizontal.jpg");
+    }
+    
+    .clients-section .grid-heading {
+        background-image: url("../assets/images/sections/clients-section-horizontal.jpg");
+    }
+
+    .contact-section .section-grid .grid-heading {
         display: block;
         background-image: url("../assets/images/sections/contact-us.jpg");
 
     }
+    
 
-    .contact-grid {
-        padding: 5%;
-    }
 }
 
 
@@ -79,7 +99,8 @@
         padding: 20px 0 50px 0;
     }
 
-    .contact-form>div:nth-child(3), .contact-form .submit-button {
+    .contact-form>div:nth-child(3),
+    .contact-form .submit-button {
         grid-column: 1/2 !important;
     }
 
@@ -91,5 +112,9 @@
 
     .contact-info>div>div {
         justify-content: center;
+    }
+
+    .main-section div img {
+        width: 70%;
     }
 }
