@@ -22,22 +22,22 @@ html {
 
 /* Scrollbars */
 ::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black; 
+    background: black;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--orange); 
+    background: var(--orange);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: white; 
+    background: white;
 }
 
 
@@ -82,6 +82,28 @@ html {
 
 .navbar-bottom {
     bottom: 0;
+}
+
+
+.main-section h1 {
+    color: var(--orange);
+    font-weight: 600;
+    font-size: 36px;
+    margin: 5px 0;
+}
+
+.main-section h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+    margin: 0;
+}
+
+.main-section h3 {
+    color: var(--orange);
+    font-weight: 300;
+    font-size: 22px;
+    margin: 5px 0;
 }
 
 
@@ -282,7 +304,7 @@ html {
     grid-template-columns: 70% 30%;
 }
 
-.contact-section .section-grid .grid-heading{
+.contact-section .section-grid .grid-heading {
     display: none
 }
 
@@ -417,7 +439,7 @@ html {
     margin-right: 15px;
 }
 
-.contact-info>div>div{
+.contact-info>div>div {
     display: flex;
     align-items: center;
 }
@@ -459,15 +481,19 @@ html {
     height: 24px;
 }
 
-.beneficiaries-section .grid-text ul li span{
+.beneficiaries-section .grid-text ul li span {
     color: var(--orange);
     font-weight: 600;
 }
 
-.who-section .top-section-close, .beneficiaries-section .bottom-section-close, .what-section .top-section-close{
+.who-section .top-section-close,
+.beneficiaries-section .bottom-section-close,
+.what-section .top-section-close {
     color: black !important;
 }
 
-.who-section .top-section-close:hover, .beneficiaries-section .bottom-section-close:hover, .what-section .top-section-close:hover{
+.who-section .top-section-close:hover,
+.beneficiaries-section .bottom-section-close:hover,
+.what-section .top-section-close:hover {
     color: white !important;
 }
