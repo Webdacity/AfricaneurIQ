@@ -57,3 +57,14 @@ function backHome() {
         window.location.replace("../index.html");
     }, 10000);
 }
+
+// Mobile Menu
+
+$(".mobile-open").click(() => {
+    $(".mobile-nav").fadeIn(500);
+})
+
+
+$(".mobile-close, .mobile-nav-content a").click(() => {
+    $(".mobile-nav").fadeOut(500);
+})

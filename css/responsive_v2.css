@@ -7,6 +7,9 @@
         top: unset !important;
         height: unset;
         /* min-height: 100vh !important;   */
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
     }
 
     .grid-text {
@@ -21,11 +24,15 @@
 
     html,
     body {
-        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
     }
 
     body {
-        overflow-y: scroll;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
     }
 
     .navbar {
@@ -86,6 +93,10 @@
         display: block;
         background-image: url("../assets/images/sections/contact-us.jpg");
 
+    }
+
+    .mobile-nav-btn {
+        display: block;
     }
     
 

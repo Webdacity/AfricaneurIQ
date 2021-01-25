@@ -21,12 +21,15 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'info@webdacity.co.za';//<== update the email address
-$email_subject = "New Form submission";
-$email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
+$email_from = 'info@africaneuriq.co.za';//<== update the email address
+$email_subject = "Website Contact Form Submission";
+$email_body = "You have received a new message:\n\n".
+
+    "From:\n $name.\n\n".
+    "Message:\n $message \n\n".
+    "Email:\n $visitor_email";
     
-$to = "info@webdacity.co.za";//<== update the email address
+$to = "info@africaneuriq.co.za";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
